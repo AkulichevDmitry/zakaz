@@ -10,7 +10,7 @@
         <div class="container">
             <div class="ufo-container">
                 <img src="./ufo.png" alt="" >
-                <img src="./greenbeam.png" alt="" height="499px">
+                <img src="./greenbeam.png" alt="" height="449px">
                 <img src="./pizzaslice.png" alt="" style="z-index: 1;" id="first">
                 <img src="./pizzaslice.png" alt="" style="z-index: 1;" id="second">
             </div>
@@ -85,7 +85,7 @@
         }
         .ufo-container {
             width: 400px;
-            margin-left: 5%;
+            margin-left: 5vw;
             display: flex;
         }
         .main-text-container div{
@@ -106,6 +106,9 @@
 
         img[src="./pepper.png"]{
             display: none;
+            position: fixed;
+            right: -162px;
+            bottom: -72px;
         }
 
         @keyframes fly {
@@ -131,16 +134,144 @@
                 width: auto;
                 height: 400px;
                 display: block;
-                position: relative;
-                right: 325px;
-                bottom: 50px;
+                position: fixed;
+                right: -162px;
+                bottom: -72px;
+                }
+
+                .main-text-container {    
+                    margin-left: -7.5% !important;
+                }
             }
 
-            .main-text-container {    
-                margin-left: -7.5% !important;
+        @media screen and (max-width: 1001px) {
+            .ufo-container {
+                width: 400px;
+                margin-left: -1%;
+                display: flex;
             }
-        }
+            img[src="./pepper.png"] {
+                width: auto;
+                height: 400px;
+                display: block;
+                position: fixed;
+                right: -162px;
+                bottom: -72px;
+                }
+                body {
+                    background-color: black;
+                }
+                .main-text-container {    
+                    margin-left: -24% !important ;
+                }
+            }
 
+            @media screen and (max-width: 801px) {
+                .ufo-container {
+                    width: 400px;
+                    margin-left: -1%;
+                    display: flex;
+                }
+                img[src="./pepper.png"] {
+                    width: auto;
+                    height: 400px;
+                    display: none;
+                    }
+                    body {
+                        background-color: black;
+                    }
+                    .main-text-container {    
+                        margin-left: -44% !important;
+                    }
+                    img[src="./button.png"] {
+                        width: 250px;
+                    }
+                }
+
+                @media screen and (max-width: 601px) {
+                    .ufo-container {
+                        width: 400px;
+                        margin-left: -1%;
+                        display: flex;
+                    }
+                    img[src="./pepper.png"] {
+                        width: auto;
+                        height: 400px;
+                        display: none;
+                        }
+                        body {
+                            background-color: black;
+                        }
+                        .main-text-container {    
+                            margin-left: -55% !important;
+                        }
+                        img[src="./button.png"] {
+                            position: relative;
+                            width: 250px;
+                            right: 429px;
+                            bottom: 79px;
+                            top: 109px;
+                          }
+                        }
+
+                        img[src="./offer4.png"] {
+                            position: relative;
+                            bottom: 18px;
+                            left: 50px;
+                          }
+
+                        img[ src="./pizzawhole_1.png"] {
+                            display: none;
+                        }
+
+                        img[src="./logo128.png"] {
+                            position: relative;
+                            bottom: 0px;
+                            right: 56px;
+                        }
+
+                        @media screen and (max-width: 414px) {
+                            .ufo-container {
+                                width: 400px;
+                                margin-left: -1%;
+                                display: flex;
+                            }
+                            img[src="./pepper.png"] {
+                                width: auto;
+                                height: 400px;
+                                display: none;
+                                }
+                                body {
+                                    background-color: black;
+                                }
+                                .main-text-container {    
+                                    margin-left: -79% !important;
+                                }
+                                img[src="./button.png"] {
+                                    position: relative;
+                                    width: 250px;
+                                    right: 334px;
+                                    bottom: 79px;
+                                    top: 121px;
+                                  }
+        
+                                img[src="./offer4.png"] {
+                                    position: relative;
+                                    bottom: -2px;
+                                    left: 36px;
+                                    width: 300px;
+                                  }
+        
+                                img[ src="./pizzawhole_1.png"] {
+                                    display: none;
+                                }
+        
+                                img[src="./logo128.png"] {
+                                    position: relative;
+                                    bottom: 0px;
+                                    right: 56px;
+                                }
+                    
         @media screen and (max-width: 321px) {
             .container {
 
@@ -154,29 +285,32 @@
                 display: flex;
             }
 
-            .main-text-container {
-                
-            }
-
             img[src="./logo128.png"] {
                 left: 85px;
             }
 
             img[src="./button.png"] {
-                top: 140px;
-                width: 180px;
-            }
-
-            img[src="./offer4.png"] {
-                width: 300px;
-                top: 30px;
-                right: 20px;
-            }
+                position: relative;
+                width: 250px;
+                right: 179px;
+                bottom: 97px;
+                top: 141px;
+              }
 
             img[src="./pepper.png"] {
                 display: none
             }
-        }
+
+            img[src="./offer4.png"] {
+                width: 234px;
+                top: 30px;
+                right: 11px;
+              }
+
+              .main-text-container {
+                margin-left: -9% !important;
+              } 
+        }}
     </style>
     <script>
 
