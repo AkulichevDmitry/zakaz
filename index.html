@@ -15,11 +15,13 @@
                 <img src="./pizzaslice.png" alt="" style="z-index: 1;" id="second">
             </div>
             <div class="main-text-container" style="display: block;">
-                <img src="./logo128.png" alt="">
+                <img src="./logo128.png" alt="" style="position: relative;
+                bottom: 0px;
+                right: 22px;">
                 <div style="display: flex;">
                     <img src="./offer4.png" alt="" style="margin-bottom: 40px; margin-right: -20px; z-index: 1">
                     <div>
-                        <img src="./pizzawhole_1.png" alt="" style="margin-top: 10px">
+                        <img src="./pizzawhole_1.png" alt="" style="margin-top: 10px; display: block;">
                         <img src="./button.png" alt="">
                     </div>
                 </div>
@@ -89,7 +91,6 @@
             display: flex;
         }
         .main-text-container div{
-        
            display: flex;
            align-items: center;
            position: relative;
@@ -109,6 +110,10 @@
             position: fixed;
             right: -162px;
             bottom: -72px;
+        }
+
+        img[src="./pizzawhole_1.png"] {
+            display: block;
         }
 
         @keyframes fly {
@@ -177,14 +182,16 @@
                     height: 400px;
                     display: none;
                     }
-                    body {
-                        background-color: black;
-                    }
                     .main-text-container {    
                         margin-left: -44% !important;
                     }
                     img[src="./button.png"] {
                         width: 250px;
+                    }
+                    img[src="./logo128.png"] {
+                        position: relative;
+                        bottom: 0px;
+                        right: 21px;
                     }
                 }
 
@@ -208,9 +215,9 @@
                         img[src="./button.png"] {
                             position: relative;
                             width: 250px;
-                            right: 429px;
-                            bottom: 79px;
-                            top: 109px;
+                            right: 692px;
+                            bottom: 74px;
+                            top: 107px;
                           }
                         }
 
@@ -230,7 +237,7 @@
                             right: 56px;
                         }
 
-                        @media screen and (max-width: 414px) {
+                        @media screen and (max-width: 415px) {
                             .ufo-container {
                                 width: 400px;
                                 margin-left: -1%;
@@ -247,13 +254,15 @@
                                 .main-text-container {    
                                     margin-left: -79% !important;
                                 }
-                                img[src="./button.png"] {
-                                    position: relative;
-                                    width: 250px;
-                                    right: 334px;
-                                    bottom: 79px;
-                                    top: 121px;
-                                  }
+
+                                    img[src="./button.png"] {
+                                        position: relative;
+                                        width: 250px;
+                                        right: 653px;
+                                        bottom: 62px;
+                                        top: 105px;
+                                      }
+                                  
         
                                 img[src="./offer4.png"] {
                                     position: relative;
